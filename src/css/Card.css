@@ -1,0 +1,41 @@
+
+  /* Responsive layout for small screens */
+  @media screen and (max-width: 767px) {
+    .home-container {
+      grid-template-columns: 2fr; /* Adjust to a single column for small screens */
+    }
+  
+    .review-card {
+      margin-bottom: 20px; /* Add some space between cards on small screens */
+    }
+  }
+
+
+  input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #aaa;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #61dafb;
+    box-shadow: 0 0 8px rgba(0, 122, 255, 0.3);
+  }
+  
+  /* Media query for small screens */
+  @media only screen and (max-width: 768px) {
+    input[type="text"] {
+      font-size: 14px;
+    }
+  }
+  

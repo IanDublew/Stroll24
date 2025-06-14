@@ -1,0 +1,219 @@
+.weekend-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.weekend-list-item {
+  list-style: none;
+  margin: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.weekend-list-item:hover {
+  transform: scale(1.05);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.event-details {
+  padding: 20px; 
+  text-align: center;
+}
+
+.event-title {
+  font-size: 2em; 
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #61dafb;
+  text-align: center;
+}
+
+.review-stars {
+  color: #ff9500;
+  font-size: 2em; 
+  margin-bottom: 12px; 
+}
+
+.event-description {
+  font-style: italic;
+  justify-content: center; 
+}
+
+.additional-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional-details li {
+  margin-bottom: 15px; 
+  word-wrap: break-word;
+}
+
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  margin-top: 20px;
+}
+
+.social-media-links a {
+  display: inline-block;
+  font-size: 24px;
+  margin: 10px; /* Add some margin around each social media link */
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+ 
+}
+
+.social-media-links a:hover {
+  color: #ff3b30;
+}
+
+
+/* Add these styles to your CSS file */
+.share-button,
+.website-link {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.share-button {
+  background-color: whitesmoke;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+.share-button:hover {
+  background-color: silver;
+}
+
+.website-link {
+  padding: 12px;
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+.website-link:hover {
+  background-color: silver;
+}
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 600px) {
+ 
+
+  .share-button,
+  .website-link {
+    width: 60%;
+    margin-top: 10px;
+    justify-content: center;
+     align-items: center;
+  }
+}
+
+
+input[type="text"] {
+  padding: 15px; /* Increase padding for larger screens */
+  width: 80%; /* Adjust the width as needed */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px; /* Increase font size for larger screens */
+  background-color: #333;
+  color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007aff;
+  box-shadow: 0 0 8px rgba(0, 122, 255, 0.3);
+}
+.component-heading {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #61dafb;
+}
+@media only screen and (max-width: 768px) {
+  .weekend-page-container {
+    max-width: 100%;
+    padding: 10px; 
+    margin: 0;
+    grid-template-columns: 4fr;
+  }
+
+  .weekend-list-item {
+    margin: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .event-image {
+    height: 190px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .event-details {
+    padding: 10px;
+  }
+
+  .event-title {
+    font-size: 1.5em;
+  }
+
+  .review-stars {
+    font-size: 1.2em;
+  }
+
+  .event-description {
+    font-size: 0.9em;
+  }
+
+  .additional-details {
+    padding: 10px;
+  }
+
+  .social-media-links a {
+    font-size: 30px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+
+}
+

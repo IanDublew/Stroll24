@@ -1,0 +1,275 @@
+/* Home.css */
+
+.home-container {
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+  gap: 20px;
+}
+
+/* Responsive layout for small screens */
+@media screen and (max-width: 767px) {
+  .home-container {
+    grid-template-columns:2fr; /* Adjust to a single column for small screens */
+  }
+
+  .component-container {
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.home-header {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333; 
+  text-align: center;
+}
+
+/* Adjust label styles */
+.home-header label {
+  display: block;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.active {
+  background-color: silver;
+  color: white;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Additional styling for component content */
+.component-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.component-description {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Adjust padding for larger screens */
+@media screen and (min-width: 768px) {
+  .component-container {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+.navbar-container button.hotel-button {
+  background-color: black;
+  color:white;
+  border: 2px solid #61dafb;
+}
+
+.navbar-container button.transport-button {
+  background-color: black;
+    color:white;
+  border: 2px solid #61dafb;
+}
+
+.navbar-container button.weekend-button {
+  background-color: black;
+  color:white;
+  border: 2px solid #61dafb;
+}
+
+.navbar-container button.sights-button {
+  background-color: black;
+  color:white;
+  border: 2px solid #61dafb;
+}
+
+.navbar-container button.activities-button {
+  background-color: black;
+  color:white;
+  border: 2px solid #61dafb;
+}
+
+.navbar-container button:hover {
+  filter: brightness(1.8);
+}
+
+.button-container button:active {
+  transform: scale(1);
+}
+
+.navbar-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.navbar-container button {
+  margin-left: 5px;
+}
+/* Responsive layout for smartphones, including larger ones */
+@media screen and (max-width: 896px) {
+  .navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px 15px; /* Increased horizontal padding */
+    box-sizing: border-box;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .navbar-container button {
+    flex: 0 1 auto; /* Allow buttons to determine their own width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 8px; /* Added horizontal padding to buttons */
+    margin: 0 2px; /* Added small margin between buttons */
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-container button i {
+    font-size: 16px; /* Slightly reduced icon size */
+    margin-bottom: 4px;
+  }
+
+  .navbar-container button span {
+    font-size: 10px;
+    display: block;
+  }
+
+  .navbar-container button.hotel-button,
+  .navbar-container button.transport-button,
+  .navbar-container button.weekend-button,
+  .navbar-container button.sights-button,
+  .navbar-container button.activities-button {
+    border-bottom: 2px solid #61dafb;
+  }
+
+  .navbar-container button:hover {
+    background-color: rgba(97, 218, 251, 0.2);
+  }
+
+  body {
+    padding-bottom: 70px;
+  }
+}
+
+/* Additional adjustments for smaller smartphones */
+@media screen and (max-width: 480px) {
+  .navbar-container button span {
+    display: none;
+  }
+
+  .navbar-container button i {
+    font-size: 16px;
+  }
+
+  .navbar-container {
+    padding: 5px 8px; /* Slightly reduced horizontal padding */
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+}
+
+/* Additional adjustments for smaller smartphones */
+@media screen and (max-width: 480px) {
+  .navbar-container button span {
+    display: none; /* Hide text on very small screens */
+  }
+
+  .navbar-container button i {
+    font-size: 16px;
+  }
+
+  .navbar-container {
+    padding: 5px 0;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+}
+/* Search.css */
+
+/* Make the search bar more specific to avoid conflicts */
+.search-bar {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+
+
+/* Optional: Animation for fun effect */
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply animation on button click for a fun effect */
+.search-button:active {
+  animation: scaleAnimation 0.2s ease-out;
+}
+
+/* Additional styles to prevent clash with navbar */
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    position: relative;
+  }
+
+  .search-bar {
+    margin-right: 0;
+  }
+}
+
+.component-heading {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #61dafb;
+}
+
+

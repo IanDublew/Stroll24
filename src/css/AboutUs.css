@@ -1,0 +1,48 @@
+/* AboutUs.css */
+
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color:black;
+  color: #fff;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.about-description {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  line-height: 1.8; /* Adjusted line-height for better readability */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .about-us-container {
+    max-width: 100%;
+    padding: 20px; /* Adjusted padding for small screens */
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-description {
+    font-size: 1em;
+    line-height: 1.6; /* Adjusted line-height for small screens */
+  }
+}
+.reddit-icon {
+  width: 40px; 
+  height: 40px; 
+  
+}

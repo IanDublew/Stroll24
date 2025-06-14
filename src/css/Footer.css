@@ -1,0 +1,40 @@
+/* Footer.css */
+.footer-container {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 2px solid #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.footer-container.visible {
+  opacity: 1;
+}
+
+.footer-container.hidden {
+  display: none;
+}
+
+.ad-container {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.ad-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Responsive styles with media queries */
+@media (max-width: 768px) {
+  .ad-container {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}

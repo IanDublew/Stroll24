@@ -1,0 +1,129 @@
+/* HotelCard.css */
+.hotels-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  color: inherit; 
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.review-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.review-content {
+  padding: 20px;
+  text-align: center; /* Center text within the content */
+}
+
+.review-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #61dafb;
+}
+
+.review-stars {
+  color: #f39c12;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.review-description {
+  font-style: italic;
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+
+/* Container for category tags */
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  margin-top: 10px;
+}
+
+/* Individual category tag */
+.category-tag {
+  cursor: pointer;
+  margin: 5px; 
+  padding: 10px 15px; 
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  border: 2px solid #f39c12;
+}
+
+/* Hover effect */
+.category-tag:hover {
+  background-color: silver;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hotels-page-container {
+    max-width: none;
+    padding: 10px; 
+    margin: 0;
+    grid-template-columns: 1fr; /* Change to a single column layout on small screens */
+  }
+
+  .review-card {
+    grid-template-rows: auto auto auto; /* Adjusted grid layout for small screens */
+  }
+
+  .review-image {
+    height: 150px; /* Adjusted height for small screens */
+  }
+
+  .review-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .review-title {
+    font-size: 1.5em; /* Adjusted font size for small screens */
+    margin-bottom: 10px;
+  }
+
+  .review-stars {
+    font-size: 1.2em; /* Adjusted font size for small screens */
+    margin-bottom: 8px;
+  }
+
+  .review-description {
+    font-size: 0.9em; /* Adjusted font size for small screens */
+  }
+
+  .category-container {
+    justify-content: center;
+  }
+
+  .category-tag {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

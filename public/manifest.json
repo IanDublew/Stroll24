@@ -1,0 +1,16 @@
+{
+  "name": "Stroll 24",
+  "short_name": "Stroll 24",
+  "description": "Discover Hidden Gems in Nairobi with Stroll 24. Explore unique places, activities, and more with our curated guide.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/Stroll24.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

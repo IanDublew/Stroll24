@@ -1,0 +1,103 @@
+/* Style for the category container */
+.category {
+  margin: 40px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 20px; /* Reduced padding for small screens */
+    margin: 20px; /* Reduced margin for small screens */
+  }
+}
+
+/* Style for the category title */
+.category h2 {
+  color: silver;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+/* Style for the list of posts */
+.category ul {
+  list-style-type: square;
+  padding: 0;
+  margin: 10px;
+}
+
+/* Style for each post item */
+.category li {
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  font-size: 1.6em; /* Adjusted font size for better readability */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: rgb(211, 211, 211);
+}
+
+/* Style for the link inside each post item */
+.category li a {
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+/* Style for the link when hovered */
+.category li a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/* Additional style for the list container */
+.list {
+  margin: 40px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 20px; /* Reduced padding for small screens */
+    margin: 20px; /* Reduced margin for small screens */
+  }
+}
+
+/* Additional style for each list item */
+.list li {
+  list-style-type: circle;
+  padding: 15px; /* Adjusted padding for better spacing */
+  margin: 15px; /* Adjusted margin for better spacing */
+  font-size: 1.6em; /* Adjusted font size for better readability */
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 10px; /* Reduced padding for small screens */
+    margin: 10px; /* Reduced margin for small screens */
+  }
+}
+
+/* Additional style for the link inside each list item */
+.list li a {
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+/* Additional style for the link when hovered */
+.list li a:hover {
+  text-decoration: underline; /* Underline effect on hover */
+  color: red;
+}

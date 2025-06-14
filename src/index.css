@@ -1,0 +1,87 @@
+:root {
+  --bg: black;
+  --header: #fff;
+  --link: #61dafb;
+  --text: hsla(0, 0%, 100%, 0.88);
+}
+
+body {
+  margin: 0;
+  font-family: "Merriweather", "Georgia", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h1, h2, h3 {
+  font-size: 2em;
+  font-size: 25px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+}
+
+p {
+  font-size: 16px; /* Slightly increased font size for better readability */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  margin-bottom: 10px; /* Adjusted margin for better spacing */
+  color: #ccc; /* Lightened text color for better contrast */
+}
+
+.App {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem 1rem;
+  max-width: 700px;
+ 
+}
+
+
+/* Header styles */
+header {
+  padding: 5px;
+  color:whitesmoke;
+ 
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+header h1 {
+  font-size: 3.5em;
+  margin: 20px;
+  justify-self: center;
+  background-image: url('../src/images/PB.jpg');
+  text-align: center;
+  margin-top: auto;
+  text-decoration: none;
+  color:white;
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    font-size: 2.5em;
+    margin: 15px;
+  }
+}
+
+
+article {
+  margin-bottom: 2rem;
+}
+
+article p {
+  margin-top: 0.5rem; /* Adjusted margin for better spacing */
+  color: var(--text); 
+}
+
+article h3 {
+  color: var(--link);
+  margin-bottom: 0rem;
+}

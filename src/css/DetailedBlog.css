@@ -1,0 +1,115 @@
+/* Overall container styles */
+.container {
+  max-width: 800px;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  min-width: 320px;
+  background-color: #333; /* Darkened background color for a sleek appearance */
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced box shadow for depth */
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Image and aside styles */
+aside {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+}
+
+aside img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+aside p {
+  padding: 1.5rem;
+  margin-left: 1.5rem;
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 15px;
+  background-color: #1a1a1a;
+}
+
+/* Article styles */
+article {
+  margin-bottom: 2rem;
+ 
+}
+
+article p {
+  margin-top: 1rem;
+  color: #ddd;
+}
+
+article h3 {
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+/* Heading styles */
+h2, h3 {
+  color: #61dafb;
+}
+
+/* DetailedBlog.css */
+.detailed-blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  
+  /* Add responsive styles */
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.blog-title {
+  font-size: 3em;
+  color: #61dafb;
+  margin-bottom: 2rem;
+}
+
+.blog-metadata {
+  margin-bottom: 2rem;
+}
+
+.date, .category-title {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.category-title {
+  font-size: 2.5em;
+  color: #61dafb;
+}
+
+.blog-preview {
+  font-size: 1.5em;
+  line-height: 2;
+  color: #ddd;
+}

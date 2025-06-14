@@ -1,0 +1,92 @@
+/* Navbar.css */
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjusted width for a balanced design */
+  height: 100vh;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  z-index: 500;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Added box shadow for depth */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.side-panel.open {
+  transform: translateX(0);
+}
+
+.side-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-panel li {
+  margin-bottom: 15px; /* Adjusted margin for better spacing */
+}
+
+.side-panel a {
+  text-decoration: none;
+  font-family: 'Helvetica', sans-serif; /* Apple's default font */
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.side-panel a:hover {
+  color: #61dafb;
+}
+
+.container {
+  transition: margin-left 0.3s ease;
+  z-index: 10;
+  width: calc(100% - 250px); /* Adjusted width for responsive design */
+  margin-left: 250px; /* Default margin for a closed side panel */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .side-panel {
+    width: 100%;
+  }
+
+  .side-panel.open {
+    transform: translateX(0);
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .side-panel li {
+    margin-bottom: 10px;
+  }
+
+  .side-panel a {
+    font-size: 20px;
+  }
+}
+
+/* Toggle button styles */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 24px;
+  color: #61dafb;
+  background-color: transparent;
+  border: none;
+}
+
+.toggle-btn:hover {
+  color: #fff;
+}
